@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <constant name="struts.action.extension" value="html"/>
+    <package name="studentPackage" extends="struts-default">
+        <action name="create" class="action.ProductAction" method="product">
+            <result name="input">/order/form.jsp</result>
+        </action>
+        <action name="store" class="com.t1708m.action.StudentAction" method="detail">
+            <result name="success">/order/order-detail.jsp</result>
+        </action>
+    </package>
+</struts>
